@@ -11,7 +11,10 @@
         android:theme="@style/Theme.CalculadoraDeGorjeta">
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="sensor"
+
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
