@@ -24,12 +24,12 @@
             android:layout_marginLeft="32dp"
             android:text="Gorjeta"
             android:textSize="18sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
-            app:layout_constraintEnd_toStartOf="@+id/seekBar"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textViewGorjeta"
+            app:layout_constraintEnd_toStartOf="@+id/seekBarPorgentagem"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textViewTotal"
             android:layout_width="0dp"
             android:layout_height="27dp"
             android:layout_marginStart="16dp"
@@ -45,7 +45,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.96"
             app:layout_constraintStart_toEndOf="@+id/textView8"
-            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGorjeta"
             app:layout_constraintVertical_bias="0.004" />
 
         <ImageView
@@ -83,7 +83,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
         <SeekBar
-            android:id="@+id/seekBar"
+            android:id="@+id/seekBarPorgentagem"
             android:layout_width="243dp"
             android:layout_height="21dp"
             android:layout_marginStart="50dp"
@@ -91,13 +91,14 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="50dp"
             android:layout_marginRight="50dp"
+            android:max="100"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextValor" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textPorcento"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -105,7 +106,7 @@
             android:layout_marginTop="16dp"
             android:text="0%"
             android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/seekBar"
+            app:layout_constraintEnd_toStartOf="@+id/seekBarPorgentagem"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextValor" />
 
@@ -117,12 +118,12 @@
             android:layout_marginLeft="32dp"
             android:text="Total"
             android:textSize="18sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
-            app:layout_constraintEnd_toStartOf="@+id/seekBar"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textViewTotal"
+            app:layout_constraintEnd_toStartOf="@+id/seekBarPorgentagem"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewGorjeta"
             android:layout_width="0dp"
             android:layout_height="27dp"
             android:layout_marginStart="16dp"
@@ -136,7 +137,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.368"
             app:layout_constraintStart_toEndOf="@+id/textView7"
-            app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+            app:layout_constraintTop_toBottomOf="@+id/seekBarPorgentagem" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
